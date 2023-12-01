@@ -22,13 +22,11 @@ for line in lines:
             str = str + char
             for key in numbers.keys():
                 if key in str:
-                    print(str)
                     if first_digit == -1:
                         first_digit = numbers[key]
                     last_digit = numbers[key]
                     str = char
     sum += first_digit * 10
     sum += last_digit
-    print(line , first_digit , last_digit)
 
 print(sum)
